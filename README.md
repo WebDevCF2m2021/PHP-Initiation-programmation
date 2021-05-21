@@ -97,6 +97,8 @@ Seul le ; termine une ligne d'instruction
     echo "commentaire sur une ligne avec #<br>"; 
     # autre commentaire sur une ligne
 
+Les commentaires ne sont jamais visibles côté utilisateur!
+
 ### 07-comment-multi.php
 
     <?php
@@ -108,3 +110,58 @@ Seul le ; termine une ligne d'instruction
 
     */echo "Cette balise n'est pas auto-fermante!";
 
+Les commentaires ne sont jamais visibles côté utilisateur!
+
+### 08-basic-variables.php
+
+Les variables sont des conteneurs dont la valeur peut être modifiée.
+
+En PHP, les variables sont représentées par un signe dollar "$" suivi du nom de la variable. Le nom est sensible à la casse.
+
+Les noms de variables suivent les mêmes règles de nommage que les autres entités PHP. Un nom de variable valide doit commencer par une lettre ou un souligné (_), suivi de lettres, chiffres ou soulignés, en évitant les caractères spéciaux.
+
+    <?php
+    // déclaration de variables
+    $name = "Pitz"; // string
+    $surname = 'Michaël'; // string
+    $age = 44; // integer (number)
+    $height = 170.2; // float (number)
+
+    // affichage des variables avec echo, si entre "", les variables sont interpétées, ce n'est pas le cas entre '' !
+    echo "<p>Mon nom est $name $surname et je suis âgé de $age ans</p>"; // affichage d'une string
+
+    // pas d'interprétation entre simple ''
+    echo '<p>Mon nom est $name $surname et je suis âgé de $age ans</p>';
+
+    // concaténation avec . ou ,
+    echo "<p>Mon nom est ".$name.' ',$surname." et je suis âgé de ".$age.' ans</p>';
+
+    // erreur, ne pas commencer par un chiffre
+    // $45bcd = "lala";
+
+    // erreur, pas d'espaces
+    // $lala lulu = 25;
+
+    // pas d'erreur, mais à éviter !
+    $éçeãö§çcole = 25;
+
+### 09-constantes.php
+
+
+Une constante est un identifiant (un nom) qui représente une valeur simple. Comme son nom le suggère, cette valeur ne peut jamais être modifiée durant l'exécution du script (sauf les constantes magiques). Les constantes sont sensibles à la casse. Par convention, les constantes sont toujours écrites en majuscule.
+
+On utilise la fonction define() ("const" étant plus souvant utilisé en orienté objet)
+
+    <?php
+    // déclaration de constantes, sont invariables et doivent être définies dès leur création. bonne pratique, toujours en majuscule séparée par des _
+
+    define("MA_CONSTANTE",125);
+    define("MA_CONSTANTE2","coucou");
+
+    echo MA_CONSTANTE;
+    echo "<br>";
+    echo MA_CONSTANTE2;
+    echo "<br>";
+    // impossible de modifier une constante !
+    define("MA_CONSTANTE",3000);
+    echo MA_CONSTANTE;

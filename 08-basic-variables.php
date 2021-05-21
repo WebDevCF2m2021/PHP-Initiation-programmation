@@ -20,5 +20,5 @@ echo "<p>Mon nom est ".$name.' ',$surname." et je suis âgé de ".$age.' ans</p>
 // erreur, pas d'espaces
 // $lala lulu = 25;
 
-// pasq d'erreur, mais à éviter !
+// pas d'erreur, mais à éviter !
 $éçeãö§çcole = 25;
