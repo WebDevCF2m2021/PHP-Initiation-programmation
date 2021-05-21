@@ -51,3 +51,60 @@ Je coderai en local et mettrai ce dépôt github à jour.
     "coucou";
     ?>
 
+### 04-html-into-php.php
+
+    <?php
+    echo "<p>I love</p> PHP<br>!";
+
+Exécute le code html côté utilisateur
+
+### 05-semicone.php
+
+    <?php
+    // La seul fin d'instruction est le ;
+    echo "A";
+    
+    
+    
+    
+                    echo                                        
+    
+    "B"
+    
+    
+    
+    
+                ;
+    
+    echo            "C";
+    
+    echo "ABC";
+        // concaténation averc le .
+	echo "A"."B"."C";
+        // concaténation averc le ,
+	echo "A","B","C";
+        // les () ne sont plus obligatoires (fonction qui est devenue une structure du langage)
+	echo("ABC");
+
+Seul le ; termine une ligne d'instruction
+
+### 06-comment-one-line.php
+
+    <?php
+
+    echo "commentaire sur une ligne avec //<br>";
+    // ceci est un commentaire sur une ligne
+    echo "commentaire sur une ligne avec #<br>"; 
+    # autre commentaire sur une ligne
+
+### 07-comment-multi.php
+
+    <?php
+    echo "commentaire sur plusieures lignes /* */<br>";
+    /*
+
+    Ici on met un commentaire de la 
+    longueur souhaîtée sur plusieures lignes
+
+    */echo "Cette balise n'est pas auto-fermante!";
+
