@@ -31,9 +31,11 @@
       echo $division." => type ". gettype($division);
       ?>
       <h2>Décimal | Float | Double</h2>
+      <p>Chiffre à virgule</p>
       <?php
       $float1 = 5.025;
       $float2 = -4.5550874982;
       ?>
+      
     </body>
 </html>
