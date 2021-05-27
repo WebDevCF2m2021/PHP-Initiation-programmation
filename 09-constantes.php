@@ -1,5 +1,5 @@
 <?php
-// déclaration de constantes, sont invariables et doivent être définies dès leur création. bonne pratique, toujours en majuscule séparée par des _
+// déclaration de constantes, sont invariables et doivent être définies dès leur création. Bonne pratique: le nom toujours en majuscule séparé par des _
 
 define("MA_CONSTANTE",125);
 define("MA_CONSTANTE2","coucou");

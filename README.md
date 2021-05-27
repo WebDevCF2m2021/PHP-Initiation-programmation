@@ -74,7 +74,9 @@ Version courte :
     <?php
     echo "<p>I love</p> PHP<br>!";
 
-Exécute le code html côté utilisateur
+Exécute le code html côté utilisateur.
+
+Bonne pratique: quand le code se termine par du php, vous pouvez omettre la fermeture `?>`
 
 ### 05-semicolon.php
 
