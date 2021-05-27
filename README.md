@@ -28,7 +28,10 @@ Je coderai en local et mettrai ce dépôt github à jour.
     // fermeture de PHP => ?>
     // cette balise est inutile si aucun texte après la balise (bonnes pratiques)
 
+**echo** est une fonction native (devenue structure/construction du langage) permettant d'afficher une chaîne de caractère. Très proche de la fonction **print**, elle est généralement préférée par la communauté PHP.
+
 ### 02-hello-world-html.php
+
 
     <!DOCTYPE html>
     <html>
@@ -43,6 +46,12 @@ Je coderai en local et mettrai ce dépôt github à jour.
     </body>
     </html>
 
+Les balises PHP peuvent se mettrent n'importe où dans le code html (au dessus, dedans, en dessous)
+
+Ouverture : `<?php`
+
+Fermeture : `?>`
+
 ### 03-shortcut-php.php
 
     <?=
@@ -50,6 +59,15 @@ Je coderai en local et mettrai ce dépôt github à jour.
     // Le raccourci <? sans le = doit lui être activé => short_open_tag = true
     "coucou";
     ?>
+
+Version longue :
+
+    ...<title><?php echo "Admin";?></title>
+
+Version courte :
+
+    ...<title><?="Admin"?></title>
+
 
 ### 04-html-into-php.php
 
@@ -86,7 +104,13 @@ Exécute le code html côté utilisateur
         // les () ne sont plus obligatoires (fonction qui est devenue une structure du langage)
 	echo("ABC");
 
-Seul le ; termine une ligne d'instruction
+Seul le ; termine une ligne d'instruction.
+
+Les espaces et retours à la ligne comme dans cet exemple ne sont pas "une bonne pratique", Il vaut mieux un code bien indenté (**indentation** : https://fr.wikipedia.org/wiki/Style_d%27indentation )
+
+La **concaténation** permet de mettre un à la suite de l'autre des chaînes de caractère: 
+https://fr.wikipedia.org/wiki/Concat%C3%A9nation
+
 
 ### 06-comment-one-line.php
 
@@ -153,7 +177,8 @@ Une constante est un identifiant (un nom) qui représente une valeur simple. Com
 On utilise la fonction define() ("const" étant plus souvant utilisé en orienté objet)
 
     <?php
-    // déclaration de constantes, sont invariables et doivent être définies dès leur création. bonne pratique, toujours en majuscule séparée par des _
+    // déclaration de constantes, sont invariables et doivent être définies dès leur création. Bonne pratique: le nom toujours en majuscule séparé par des _
+
 
     define("MA_CONSTANTE",125);
     define("MA_CONSTANTE2","coucou");
@@ -165,3 +190,4 @@ On utilise la fonction define() ("const" étant plus souvant utilisé en orient�
     // impossible de modifier une constante !
     define("MA_CONSTANTE",3000);
     echo MA_CONSTANTE;
+
