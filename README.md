@@ -58,7 +58,7 @@ Je coderai en local et mettrai ce dépôt github à jour.
 
 Exécute le code html côté utilisateur
 
-### 05-semicone.php
+### 05-semicolon.php
 
     <?php
     // La seul fin d'instruction est le ;
