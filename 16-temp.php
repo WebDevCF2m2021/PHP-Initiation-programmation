@@ -1,11 +1,10 @@
 <?php
 // si il existe une variable POST nommée eau => on a envoyé le formulaire
 if (isset($_POST['eau'])) {
-    
+
     // si la variable n'est pas au bon format, on la convertit en int
     $tempWater = (float) $_POST['eau'];
 
-    
 // le formulaire n'est pas envoyé    
 } else {
     // variable par défaut
@@ -27,17 +26,17 @@ if (isset($_POST['eau'])) {
         </form>
         <p><?php
 // vérification, condition if
-            if ($tempWater <= 0) { // si plus petit ou égal à 0
-                echo "L'eau est gelée à $tempWater °C";
+if ($tempWater <= 0) { // si plus petit ou égal à 0
+    echo "L'eau est gelée à $tempWater °C";
 
 // sinon si (le if a renvoyé false)  
-            } elseif ($tempWater < 100) {
-                echo "L'eau est liquide à $tempWater °C";
+} elseif ($tempWater < 100) {
+    echo "L'eau est liquide à $tempWater °C";
 
 // sinon (le if et le elseif sont false)
-            } else {
-                echo "L'eau est gazeuse à $tempWater °C";
-            }
-            ?></p>
+} else {
+    echo "L'eau est gazeuse à $tempWater °C";
+}
+?></p>
     </body>
 </html>
