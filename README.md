@@ -329,3 +329,38 @@ On utilise la fonction define() ("const" étant plus souvant utilisé en orient�
     echo $int1;
     echo "<br>";
     echo --$int1;
+
+### 14-assigement-operators.php
+
+    // variables numériques
+    $x = 5;
+    $y = 2;
+
+    // +=
+    $x += $y;
+    echo $x; // 7
+    echo "<hr>";
+
+    // -=
+    $x -= $y;
+    echo $x; // 5
+    echo "<hr>";
+
+    // *=
+    $x *= $y;
+    echo $x; // 10
+    echo "<hr>";
+
+    // /=
+    $x /= $y;
+    echo $x; // 5
+    echo "<hr>";
+
+    // %=
+    $x %= $y;
+    echo $x; // 1
+    echo "<hr>";
+
+### 15-comparaison-operator.php
+
+    
