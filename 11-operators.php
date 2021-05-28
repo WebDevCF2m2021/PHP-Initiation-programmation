@@ -24,7 +24,7 @@ echo '$var2 / $var4 = '.($var2 / $var4)."<br>";
 // utilisation du modulo % boucles et conditions pas encore vues
 
 for($i=1;$i<=10;$i++){ // une boucle de 1 à 10
-  // si impair
+  // si impair | 1 => true | 0 => false
   if($i%2){
     echo "<p style='background-color:grey;'>$i</p>";
   }else{
